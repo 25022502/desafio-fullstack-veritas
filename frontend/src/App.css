@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f5f7;
+  color: #172b4d;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.header p {
+  margin: 0;
+  color: #6b778c;
+}
+
+.kanban {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.column {
+  background: #ebecf0;
+  border-radius: 10px;
+  padding: 16px;
+  min-height: 400px;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.column-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tasks {
+  min-height: 250px;
+}
+
+.empty {
+  text-align: center;
+  color: #6b778c;
+  padding: 40px 10px;
+}
+
+.add-button {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  background: white;
+  color: #172b4d;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background: #dfe1e6;
+}
+.task-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.task-card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.task-card p {
+  margin: 0 0 16px;
+  color: #6b778c;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  border: none;
+  border-radius: 5px;
+  padding: 7px 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.task-actions button:hover {
+  background: #dfe1e6;
+}

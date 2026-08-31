@@ -1,0 +1,19 @@
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Arquivos compilados do Go
+*.exe
+*.out
+*.test
+
+# Editores e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
